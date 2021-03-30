@@ -1,0 +1,10 @@
+﻿  binaryTree.cpp
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\binaryTree.cpp(9,22): error C2259: “RandomBinaryTree”: 无法实例化抽象类
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\source.h(31): message : 参见“RandomBinaryTree”的声明
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\binaryTree.cpp(9,22): message : 由于下列成员:
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\binaryTree.cpp(9,22): message : “void BinaryTree::buildTree(std::vector<int,std::allocator<int>>)”: 是抽象的
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\source.h(23): message : 参见“BinaryTree::buildTree”的声明
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\binaryTree.cpp(9,22): message : “void BinaryTree::addNode(TreeNode)”: 是抽象的
+C:\Users\china\Desktop\955\code\binaryTree\binaryTree\source.h(24): message : 参见“BinaryTree::addNode”的声明
+  source.cpp
+  正在生成代码...
