@@ -1,1 +1,2 @@
 C:\Users\china\Desktop\955\code\binaryTree\binaryTree\Debug\binaryTree.exe
+C:\Users\china\Desktop\955\code\binaryTree\AllKindsOfBiTrees\binaryTree\Debug\binaryTree.exe

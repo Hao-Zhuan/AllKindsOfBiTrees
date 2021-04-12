@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AllKindsOfTrees.cpp" />
     <ClCompile Include="binaryTree.cpp" />
-    <ClCompile Include="source.cpp" />
+    <ClCompile Include="AVLTree.cpp" />
+    <ClCompile Include="red_blackTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source.h" />

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <stack>
 #include <vector>
+#include <queue>
 #define floor size_t 
 
 struct TreeNode
@@ -19,21 +20,17 @@ public:
 	TreeNode* root;
 	BinaryTree();
 	BinaryTree(TreeNode*);
+	void randomTree(size_t n) {};
 	virtual ~BinaryTree() {};
-	virtual void buildTree(std::vector<int>) = 0;
-	virtual void addNode(TreeNode) = 0;
+	virtual void buildTree(std::vector<int>) {};
+	virtual void addNode(TreeNode) {};
 	std::vector<int> preorderTraversal(TreeNode*);
 	std::vector<int> inorderTraversal(TreeNode*);
 	std::vector<int> postorderTraversal(TreeNode*);
 	std::vector<int> levelorderTraversal(TreeNode*);
 	void printTree() ;
 };
-class RandomBinaryTree :private BinaryTree {
-	virtual void buildTree(std::vector<int>) {}
-	virtual void addNode(TreeNode){}
-public:
-	void buildTree(floor n) {}
-};
+
 class BalancedBinaryTree :public BinaryTree {
 public:
 	virtual void buildTree(std::vector<int>) {};
