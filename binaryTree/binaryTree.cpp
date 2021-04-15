@@ -22,9 +22,9 @@ void BinaryTree::printTree() {
 std::vector<int> BinaryTree::preorderTraversal(TreeNode*){
 	std::vector<int>res;
 	std::stack<TreeNode*>st;
-	while (root || !q.empty()) {
+	while (root || !st.empty()) {
 		while (root) {
-			q.emplace(root);
+			st.emplace(root);
 			res.emplace_back(root->val);
 			root = root->left;
 		}
@@ -37,9 +37,9 @@ std::vector<int> BinaryTree::preorderTraversal(TreeNode*){
 std::vector<int> BinaryTree::inorderTraversal(TreeNode*){
 	std::vector<int>res;
 	std::stack<TreeNode*>st;
-	while (root || !q.empty()) {
+	while (root || !st.empty()) {
 		while (root) {
-			q.emplace(root);
+			st.emplace(root);
 			root = root->left;
 		}
 		root = st.top();
